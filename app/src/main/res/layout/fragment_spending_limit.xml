@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/pageMargin"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containPreauth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:src="@drawable/ic_back"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"
+            android:tint="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/containText1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/containYesNoBt"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/iconSize"
+                android:layout_height="@dimen/iconSize"
+                android:src="@drawable/ic_pre_auth_icon"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tvMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/how_this_works"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:theme="@style/HeadText"/>
+            <TextView
+                android:id="@+id/txtContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pre_auth_card_empty"
+                android:gravity="center"
+                android:theme="@style/SmallText"
+                />
+            <TextView
+                android:id="@+id/btFind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_out"
+                android:textColor="@color/gray"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:theme="@style/SubText"/>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step1"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/light_text"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step2"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/light_text"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/open_sans"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step3"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/light_text"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/open_sans"/>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtDoLater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/do_you_proceed"
+            app:layout_constraintBottom_toTopOf="@+id/containYesNoBt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/pageMargin"
+            app:layout_constraintTop_toBottomOf="@+id/containText1"
+            android:theme="@style/BoldSubText"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/containYesNoBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDoLater"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+
+                android:background="@drawable/bg_white_gray_line"
+                android:layout_weight="0.1"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:textSize="@dimen/buttonText"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_bold"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_orangr_bt"
+
+                android:textColor="@color/white"
+                android:layout_weight="0.1"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:textSize="@dimen/buttonText"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_bold"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containSpend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btback"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="top|start"
+            android:tint="@color/black"
+            android:src="@drawable/ic_back"
+            android:paddingEnd="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtTile"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTile"/>
+
+        <LinearLayout
+            android:id="@+id/toopBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btback">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_line_dark_circle">
+
+                    <TextView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:background="@drawable/ic_round_gradient"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="0.1dp"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/toopBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/toopBar" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:background="@drawable/ic_round_gradient"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="0.1dp"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/toopBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/toopBar" />
+
+                <TextView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/bg_line_light_circle"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtTile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/set_spending_limit"
+           android:theme="@style/HeadText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toopBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/btback"/>
+
+        <LinearLayout
+            android:id="@+id/containText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/containButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTile">
+
+
+            <TextView
+                android:id="@+id/txtMainContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/spend_limit_add_more_later"
+               android:theme="@style/SubText" />
+
+            <TextView
+                android:id="@+id/txtSubContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="@string/remeber"
+                android:textColor="@color/light_text"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="gone" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/containPhone"
+                        style="@style/loginEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/containLocation">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/editTextHeight"
+                            android:background="@drawable/bg_hash_box"
+                            android:ellipsize="end"
+                            android:hint=""
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textSize="@dimen/editTextSize"
+                            android:textColor="@color/light_text">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:background="#CCCCCC">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="Or"
+                           android:theme="@style/SubText" />
+                    </FrameLayout>
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:orientation="horizontal"-->
+                    <!--                    android:layout_marginTop="@dimen/_10sdp">-->
+                    <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                    <!--                        android:id="@+id/radio20"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="£20"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:background="@drawable/ic_bg_graident_bt"-->
+                    <!--                        android:layout_weight="0.1"-->
+                    <!--                        android:layout_marginEnd="@dimen/_5sdp"/>-->
+                    <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                    <!--                        android:id="@+id/radio50"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="£50"-->
+                    <!--                        android:textColor="@color/white"-->
+                    <!--                        android:layout_weight="0.1"-->
+                    <!--                        android:background="@drawable/ic_bg_graident_bt"-->
+                    <!--                        android:layout_marginStart="@dimen/_5sdp"/>-->
+
+                    <!--                </LinearLayout>-->
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:orientation="horizontal"-->
+                    <!--                    android:layout_marginTop="@dimen/_10sdp">-->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/radio100"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="£100"-->
+                    <!--                        android:layout_weight="0.1"-->
+                    <!--                        android:background="@drawable/ic_bg_graident_bt"-->
+                    <!--                        android:layout_marginEnd="@dimen/_5sdp"/>-->
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/radioCustom"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="£200"-->
+                    <!--                        android:layout_weight="0.1"-->
+                    <!--                        android:background="@drawable/ic_bg_graident_bt"-->
+                    <!--                        android:layout_marginStart="@dimen/_5sdp"/>-->
+                    <!--                </LinearLayout>-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/txtNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:text="@string/all_fund_no_use"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/containNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/bg_vilot"
+                        android:gravity="center|top"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_warning" />
+
+                        <TextView
+                            android:id="@+id/txtFundAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/open_sans"
+                            android:text="@string/fund_add_acc_revice"
+                            android:textSize="@dimen/bodyText" />
+
+                        <TextView
+                            android:id="@+id/txtSetil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/settl_all"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containText">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btSkip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_weight="0.1"
+                android:background="@drawable/bg_white_gray_line"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/skip_for_now"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/buttonText"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/viewSpcace"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_weight="0.1"
+                android:background="@drawable/bg_gray_button"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonText"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

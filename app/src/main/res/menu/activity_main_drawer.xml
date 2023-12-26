@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dash"
+            android:title="@string/dashboard"
+            />
+        <item
+            android:id="@+id/nav_account"
+            android:title="@string/account_n" />
+        <item
+            android:id="@+id/navigation_line_up"
+            android:title="@string/line_up" />
+        <item
+            android:id="@+id/navigation_artist"
+            android:title="@string/artists" />
+        <item
+            android:id="@+id/navigation_map"
+            android:title="@string/how_to_find" />
+<!--        <item-->
+<!--            android:id="@+id/nav_event_info"-->
+<!--            android:title="@string/event_info" />-->
+        <item
+            android:id="@+id/nav_contact"
+            android:title="@string/contact" />
+        <item
+            android:id="@+id/nav_terms"
+            android:title="@string/terms_conditions" />
+<!--        <item-->
+<!--            android:id="@+id/nav_invest"-->
+<!--            android:title="@string/invest_onbeat" />-->
+
+    </group>
+</menu>

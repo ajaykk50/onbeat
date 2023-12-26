@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_auth"
+   app:startDestination="@id/navigation_default">
+    <fragment
+        android:id="@+id/navigation_default"
+        android:name="www.onbeatapps.com.ui.login_register.DefaultFragment"
+        android:label="Login Or Register"
+        tools:layout="@layout/null_fragment" >
+        <action
+            android:id="@+id/action_navigation_default_to_navigation_scan"
+            app:destination="@id/navigation_scan" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="www.onbeatapps.com.ui.ticketScan.TicketScanFragment"
+        android:label="scan ticket"
+        tools:layout="@layout/fragment_scan_ticket" />
+    <fragment
+        android:id="@+id/navigation_login_phone"
+        android:name="www.onbeatapps.com.ui.login_register.LoginRegisterFragment"
+        android:label="Login Or Register"
+        tools:layout="@layout/fragment_register_phone" >
+        <action
+            android:id="@+id/action_navigation_login_phone_to_navigation_otp"
+            app:destination="@id/navigation_otp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_otp"
+        android:name="www.onbeatapps.com.ui.login_register.OtpFragment"
+        android:label="Login Or Register"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_navigation_otp_to_navigation_pin"
+            app:destination="@id/navigation_pin" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_pin"
+        android:name="www.onbeatapps.com.ui.setPin.PinSetFragment"
+        android:label="Set Pin"
+        tools:layout="@layout/fragment_set_pin" >
+        <action
+            android:id="@+id/action_navigation_pin_to_navigation_facId"
+            app:destination="@id/navigation_facId" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_facId"
+        android:name="www.onbeatapps.com.ui.setFaceId.FaceIdFragment"
+        android:label="FacID "
+        tools:layout="@layout/fragment_face_id" >
+        <action
+            android:id="@+id/action_navigation_facId_to_navigation_welcome"
+            app:destination="@id/navigation_welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_pay"
+        android:name="www.onbeatapps.com.ui.sample.PaymentFragment"
+        android:label="Login Or Register"
+        tools:layout="@layout/fragment_pay" />
+
+    <fragment
+        android:id="@+id/navigation_welcome"
+        android:name="www.onbeatapps.com.ui.welcomeActivity.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_navigation_welcome_to_navigation_add_wrist_band2"
+            app:destination="@id/navigation_add_wrist_band" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_wrist_band"
+        android:name="www.onbeatapps.com.ui.addWristBand.AddWristBandFragment"
+        android:label="Add wristband"
+        tools:layout="@layout/fragment_add_band" >
+        <action
+            android:id="@+id/action_navigation_add_wrist_band_to_navigation_qr_scan2"
+            app:destination="@id/navigation_qr_scan" />
+        <action
+            android:id="@+id/action_navigation_add_wrist_band_to_navigation_spending_limit2"
+            app:destination="@id/navigation_spending_limit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_qr_scan"
+        android:name="www.onbeatapps.com.ui.addWristBand.QrCodeFragment"
+        android:label="Qr Code Scan"
+        tools:layout="@layout/fragment_qr_code_scan" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_spending_limit"
+        android:name="www.onbeatapps.com.ui.setSpendingLimit.SetSpendingLimitOnBodingFragment"
+        android:label="Spending Limit"
+        tools:layout="@layout/fragment_spending_limit" >
+
+        <action
+            android:id="@+id/action_navigation_spending_limit_to_navigation_add_card2"
+            app:destination="@id/navigation_add_card" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_card"
+        android:name="www.onbeatapps.com.ui.addCard.AddCardOnBoardingFragment"
+        android:label="Add Card"
+        tools:layout="@layout/fragment_add_card" >
+
+        <action
+            android:id="@+id/action_navigation_add_card_to_navigation_enjoy2"
+            app:destination="@id/navigation_enjoy" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_enjoy"
+        android:name="www.onbeatapps.com.ui.welcomeActivity.EnjoyFragment"
+        android:label="Enjoy"
+        tools:layout="@layout/fragment_enjoy" />
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="www.onbeatapps.com.ui.login_register.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_pay_strip"
+        android:name="www.onbeatapps.com.ui.addCard.SavedCardsFragment"
+        android:label="Login"
+        tools:layout="@layout/splash_activity" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_terms_condition"
+        android:name="www.onbeatapps.com.ui.termCondition.TermsFragment"
+        android:label="@string/terms_conditions"
+        tools:layout="@layout/fragment_terms" />
+
+    <fragment
+        android:id="@+id/navigation_abou"
+        android:name="www.onbeatapps.com.ui.about.aboutFragment"
+        android:label=""
+        tools:layout="@layout/fragment_about" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="www.onbeatapps.com.ui.contact.ContactEventColseFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact" />
+
+
+
+
+
+
+
+</navigation>

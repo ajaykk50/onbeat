@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/pageMargin"
+    tools:ignore="MissingConstraints">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_back"
+        android:visibility="visible"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:tint="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/iconSize"
+                android:layout_height="@dimen/iconSize"
+                android:src="@drawable/ic_logo"
+               />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_or_log_in"
+                android:textSize="@dimen/mainHeading"
+                android:fontFamily="@font/os_font_regular"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:id="@+id/btGoogle"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:background="@drawable/bg_red_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginEnd="6dp">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_google" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btFb"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:background="@drawable/bg_fb_button"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="6dp">
+                    <ImageView
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:src="@drawable/ic_fb" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#CCCCCC">
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtOr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or_login_with"
+                    android:textColor="@color/light_text"
+                    android:textSize="@dimen/normalText"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"/>
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/containLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:background="@drawable/bg_hash_box"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="5dp">
+<!--                <www.onbeatapps.com.utils.CountryCodeSpinner-->
+<!--                    android:id="@+id/spincountry"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"/>-->
+
+                <Spinner
+                    android:id="@+id/spnCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                <TextView
+                    android:id="@+id/txtCountryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Country"
+                    android:textColor="@color/light_text"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_weight="0.1"
+                   />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_down_arrow"
+                    android:layout_marginEnd="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/containPhone"
+                style="@style/loginEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:layout_marginTop="15dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containLocation"
+                app:layout_constraintBottom_toTopOf="@+id/txtTeams">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editTextHeight"
+                    android:background="@drawable/bg_hash_box"
+                    android:hint="@string/enter_phone_number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/editTextSize"
+                    android:maxLength="11"
+                    android:textColor="@color/light_text">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtTeams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/agreed_onbeat_terms_service"
+                android:textSize="@dimen/normalText"
+                app:layout_constraintBottom_toTopOf="@+id/btNext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containPhone"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/light_text"
+                android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/ic_bg_graident_bt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/login"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonText"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/open_sans" />
+
+
+
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/txtTermsCondition"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/agreed_onbeat_terms_service"-->
+<!--                android:fontFamily="@font/open_sans"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:padding="@dimen/_5sdp"/>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

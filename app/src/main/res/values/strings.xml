@@ -1,0 +1,1425 @@
+<resources>
+    <string name="app_name">OnBeat</string>
+
+    <string name="common_text_no_internet_connection_message">No Internet Connection Available.</string>
+    <string name="common_text_api_failure_message">Unable to connect with server please try again later.</string>
+    <string name="retry">Retry</string>
+    <string name="no_data_found">No data</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="register_or_log_in">Register or Login</string>
+    <string name="phone">Phone</string>
+    <string name="social_media">Social Media</string>
+    <string name="enter_phone_number">Mobile No.</string>
+    <string name="enter_phone_number1">Enter phone number</string>
+<!--    <string name="agreed_onbeat_terms_service">New users: By signing up, I confirm that I have read and agreed to Onbeat’s <font color='#51AADF'>Terms &amp; Conditions</font></string>-->
+    <string name="agreed_onbeat_terms_service">New users: By signing up, I confirm that I have read and agreed to Onbeat’s<font color='#51AADF'> User agreement &amp; Terms of service.</font></string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="next">Next</string>
+    <string name="code_send_again">Didn\'t receive the code?</string>
+    <string name="set_a_passcode">Set a passcode</string>
+    <string name="enter_sms">Enter code we texted you.</string>
+    <!--    <string name="this_code_easy_access">This passcode will ease the access to your account with all security.</string>-->
+    <string name="this_code_easy_access">Set a passcode to help protect your data</string>
+    <string name="set_faceid">Set FaceID</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="fac_id_se_eassy">Next time you\'ll open the app, you can use TouchID to make it even easier and more secure.</string>
+    <string name="use_face_id">Do you want to use\nTouchID to access the app?</string>
+    <string name="following_this_step">Let\'s get you ready to enjoy the OnBeat in these 2 easy steps...</string>
+    <string name="step1">1. Scan your wristband</string>
+    <string name="step2">1. Set your balance</string>
+    <string name="step3">2. Add a payment method</string>
+    <string name="let_s_do_this">Let\'s do this?</string>
+    <string name="begin">Begin</string>
+    <string name="i_ll_do_this_later">I\'ll do this later</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="scan_qr_wristband">Scan QR code on wristband</string>
+    <string name="set_spending_limit">Let’s top up your wallet!</string>
+    <string name="spending_limit">Spending limit</string>
+    <string name="spend_limit_add_more_later">Tell us how much you want to spend\nso we can party!</string>
+    <string name="add_card">Add card</string>
+    <string name="add_card_normal">Add payment card</string>
+    <string name="pay_you_spend_spend">Please specify the credit or debit card you want to add funds with</string>
+    <string name="enjoy_your_festival">Enjoy OnBeat</string>
+    <string name="congrats_enjoy_your_festival">That\'s you all set up. Enjoy!</string>
+    <string name="let_s_go">Lets go !</string>
+    <string name="login">Login</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="enter_otp">Enter verification code</string>
+    <string name="send_otp_again">Send code again</string>
+    <string name="confirm">Confirm</string>
+    <string name="successfully_set_passcode">Successfully set passcode</string>
+    <string name="passcode_set">Passcode set</string>
+    <string name="dashboard">Wallet\n\n</string>
+    <string name="account">Account</string>
+    <string name="event_info">Event info</string>
+    <string name="contact">Contact</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="wrist_blance">Wristband balance</string>
+    <string name="currency_symple">£</string>
+    <string name="total_spent">Total spent</string>
+    <string name="transactions">Transactions</string>
+    <string name="see_all">See all</string>
+    <string name="set_new_spending_limit">+ Top up your wallet</string>
+    <string name="add_band">+ Add wristband</string>
+    <string name="unlink_ticket">Unlink your ticket</string>
+    <string name="unlink_ticket1">Unlink your ticket?</string>
+    <string name="unlink_ticket_bt">Unlink</string>
+<!--    <string name="add_card_and_spending_limit">+ Add card and spending limit</string>-->
+    <string name="add_card_and_spending_limit">+ Add card and Top up your wallet</string>
+    <string name="entet_pin">Enter 4 digit passcode</string>
+    <string name="entet_pin1">Enter 4 digit passcode to continue.</string>
+    <string name="not_match_pin">New and confirm passcode doesn\'t match</string>
+    <string name="forgot_pin">Forgot passcode</string>
+    <string name="forgot_pass">Forgot passcode?</string>
+    <string name="entet_old_pass">Enter old passcode</string>
+    <string name="entet_newPass">Enter 4 digit new passcode</string>
+
+    <!--    old-->
+    <!--    <string name="facebook_app_id">1167662060404105</string>-->
+    <!--    <string name="fb_login_protocol_scheme">fb1167662060404105</string>-->
+
+    <string name="facebook_app_id">192533772839048</string>
+    <string name="fb_login_protocol_scheme">fb192533772839048</string>
+
+    <string name="or_login_with">Or login with</string>
+    <string name="or">Or</string>
+    <string name="user_name">User name</string>
+    <string name="name">Name</string>
+    <string name="contact_details">Please fill in your details below:</string>
+    <string name="unverified">Unverified</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="wanna_use_a_different_card_add_card">Want to use a different card? <font color='#DB6F57'>Add new card</font></string>
+    <string name="add_card1">Add new card</string>
+    <string name="what_is_on">What is OnBeat?</string>
+    <string name="about_pre_auth">About pre-authorisation</string>
+    <string name="security">Security</string>
+    <string name="passcode">Passcode</string>
+    <string name="face_id">Touch ID</string>
+    <string name="setup_limit">Setup my spending limit</string>
+    <string name="your_wristband">Your wristband</string>
+    <string name="your_ticket">Your ticket </string>
+    <string name="passcode_not_match">Passcode doesn\'t match! Try again</string>
+    <string name="add_a_wristband">Add a wristband</string>
+    <string name="add_band_continue">Scan wristband QR code or enter wristband number to continue.</string>
+    <string name="ticket_band_continue">Scan ticket QR code or enter ticket number to continue</string>
+    <string name="band_connected">Wristband connected</string>
+    <string name="wristband_not_connected">Wristband not connected</string>
+    <string name="terms">Welcome to Website Name!\n\n These terms and conditions outline the rules and regulations for the use of Company Name\'s Website, located at Website.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use Website Name if you do not agree to take all of the terms and conditions stated on this page. The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company\'s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client\'s needs in respect of provision of the Company\'s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same. Cookies We employ the use of cookies. By accessing Website Name, you agreed to use cookies in agreement with the Company Name\'s Privacy Policy. Most interactive websites use cookies to let us retrieve the user\'s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies. License Unless otherwise stated, Company Name and/or its licensors own the intellectual property rights for all material on Website Name. All intellectual property rights are reserved. You may access this from Website Name for your own personal use subjected to restrictions set in these terms and conditions. You must not: Republish material from Website Name Sell, rent or sub-license material from Website Name Reproduce, duplicate or copy material from Website Name Redistribute content from Website Name This Agreement shall begin on the date hereof. Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Company Name does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Company Name,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Company Name shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website. Company Name reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions. You warrant and represent that: You are entitled to post the Comments on our website and have all necessary licenses and consents to do so; The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party; The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity. You hereby grant Company Name a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media. Hyperlinking to our Content The following organizations may link to our Website without prior written approval: Government agencies; Search engines; News organizations; Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site. These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party\'s site. We may consider and approve other link requests from the following types of organizations: commonly-known consumer and/or business information sources; dot.com community sites; associations or other groups representing charities; online directory distributors; internet portals; accounting, law and consulting firms; and educational institutions and trade associations. We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Company Name; and (d) the link is in the context of general resource information. These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party\'s site. If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Company Name. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response. Approved organizations may hyperlink to our Website as follows: By use of our corporate name; or By use of the uniform resource locator being linked to; or By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party\'s site. No use of Company Name\'s logo or other artwork will be allowed for linking absent a trademark license agreement. iFrames Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website. Content Liability We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights. Reservation of Rights We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it\'s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions. Removal of links from our website If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly. We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date. Disclaimer To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will: limit or exclude our or your liability for death or personal injury; limit or exclude our or your liability for fraud or fraudulent misrepresentation; limit any of our or your liabilities in any way that is not permitted under applicable law; or exclude any of our or your liabilities that may not be excluded under applicable law. The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty. As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</string>
+    <string name="save_card_dt">We will reserve money from your card to add to your wristband… but don’t worry, you’ll only pay for what you spend.</string>
+    <string name="setup_my_spending_limit">Setup my spending limit</string>
+    <string name="add_new_card">Want use a different card? <font color='#51AADF'>Add card</font></string>
+    <string name="select_card">Select card</string>
+    <string name="connected">Connected</string>
+    <string name="lost_band">Have you lost your wristband?</string>
+    <string name="edit_name">Edit contact details</string>
+    <string name="first_name">First name</string>
+    <string name="las_name">Last name</string>
+    <string name="save">Save</string>
+    <string name="edit_email_address">Edit email address</string>
+    <string name="edit_phone_numbers">Edit phone numbers</string>
+    <string name="country">Country</string>
+    <string name="lost_wristband">Lost wristband?</string>
+    <string name="lost_wristband_">Lost wristband</string>
+    <string name="declaring_wristband_lost">By declaring your wristband lost, it will be instantly deactivated, securing your wristband balance.</string>
+    <string name="have_you_lost_your_wristband">Have you lost your wristband?</string>
+    <string name="cancel_band">Wristband cancelled</string>
+    <string name="save_card">Save Card</string>
+    <string name="enter_name">Enter first name</string>
+    <string name="enter_s_name">Enter last name</string>
+    <string name="vaild_m_number">Enter a valid mobile number to continue.</string>
+    <string name="edit_passcode">Edit Passcode</string>
+    <string name="enter_old_passcode">Enter old passcode</string>
+    <string name="enter_next_passcode">Enter new passcode</string>
+    <string name="no_transaction">No transaction recorded</string>
+    <string name="delet_card">Do you really want to delete the card?</string>
+    <string name="unlink_ticket_">Do you really want to unlink ticket?</string>
+    <string name="replace_card">Do you really want to add a new card?</string>
+    <string name="log_out">Logout</string>
+    <string name="log_out_content">Are you sure you want to logout?</string>
+<!--    Logout will erase all your account history from the  app.</string>-->
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="proceed">Proceed</string>
+    <string name="replace">Replace</string>
+    <string name="codeErro">Verification code entered is incorrect! Try again</string>
+    <string name="codeErroPin">Enter 4 digit verification code sent to</string>
+    <string name="delet_settile_note">Note: During card delete , the amount spent  using the existing card will be settled.</string>
+    <string name="unlink_note">Do you want to unlink your ticket?</string>
+    <string name="replace_settile_note">Note: During card replace , the amount spent  using the existing card will be settled.</string>
+    <string name="set_touchid">Set TouchID</string>
+    <string name="logout">Logout</string>
+    <string name="see_all_transactions"><u>See all transactions</u></string>
+    <string name="transactions_list">Transaction history</string>
+    <string name="submit">Submit</string>
+    <string name="remeber">(Remember, the card limit is £50... we suggest using it all)</string>
+    <string name="welcome_to_onbeat">Welcome to OnBeat</string>
+    <string name="copy_ticket">Copy/Paste ticket number</string>
+    <string name="scan_qr_code_on_ticket">Scan QR code on ticket</string>
+    <string name="add_your_ticket">Add your ticket</string>
+    <string name="enter_ticket_number">Enter ticket reference</string>
+    <string name="what_is_onbeat"><u>What is OnBeat?</u></string>
+    <string name="scan_ticket">Please scan ticket or enter your ticket\nreference  to get started</string>
+    <string name="set_pass_easy">This passcode will ease the access to your account with all security.</string>
+    <string name="let_top_up">Let\'s top up your account\nso you’re all set up to party!</string>
+    <string name="all_fund_no_use">Please note:\n\nAll funds added to your account are\n“pre-authorised”\nIf you don’t spend it, you don’t lose it!</string>
+    <string name="fund_add_acc_revice"><font color='#9F07C8'>Funds added to your account are “pre-authorised”, basically they are reserved on your card. Your card will only be charged for what you have spent from your OnBeat balance.</font> <font color='#51AADF'><u> Find out more.</u></font></string>
+    <string name="settl_all"><font color='#9F07C8'>This will settle all existing payments and pre-authorise a new balance to spend. Your current available funds will be replaced by this new amount.</font> <font color='#51AADF'><u> Find out more.</u></font></string>
+    <string name="number">Number:</string>
+    <string name="type">Type:</string>
+    <string name="no_loger_attend">No longer attending the event?\n\nUnlinking your ticket will clear down all funds and reset the ticket so that it can be re-used\n\nYou must do this before selling or exchanging your ticket\n\n</string>
+    <string name="un_link_clear_data">Unlinking a ticket will clear all app data including funds, card and login details</string>
+    <string name="ticket_unlinked">Ticket unlinked!</string>
+    <string name="got_it">Got it</string>
+    <string name="ticket_remove_success">Your ticket has now been unlinked from OnBeat app.\nAll funds, login details and card details have been cleared and the ticket is ready to use again\n\nHave a great day, hope to see you next time!\n\n</string>
+    <string name="content_what_onbeat">OnBeat is a festival and event payment platform with a difference.\n\nBy using OnBeat you are helping the event run more efficiently. OnBeat supplies live insights into what’s going on to help with things like stock and staffing. Helping to reduce queues and making your event experience better.\n\nWhen you add available funds to your OnBeat account you are simply doing a “pre-authorisation” for that amount. Therefore, if you have funds left over in your OnBeat account at the end of the event you don’t need to worry, you won’t be charged.\n\nWe care about data. We will NEVER share your data with 3rd parties without your strict and informed permission.\n\nThe version of the app you are using now is the V1 pilot. Its aim is to test just the payment platform which is the foundation of this app. Coming soon will be many other features to help improve your all round event experience.\n\nThanks for downloading the app, everything else will become apparent when you get to the event\n\n</string>
+    <string name="what_is_pre_auth"><b>1. What is a pre-authorisation?</b>\n\nWhen you make a reservation, there may be instances where the hotel will contact your credit (or debit) card company to confirm that the card you are using is valid and hasn’t been reported lost or stolen. At this time, they may also check to see if the card has enough money to cover the transaction. This is communicated in the form of a pre-authorisation of the full amount of your reservation. The hotel, however, will not proceed with the charge. The time at which your card will be charged will depend on the terms and conditions linked to your booking.\n\n<b>2. What’s the difference between a pre-authorisation and an actual charge to my credit card?</b>\n\nPre-authorisations are common but are often confused with actual charges. While in-store purchases are immediately charged and deducted from your available balance, pre-authorisations are temporary holds. The length of the hold will vary, and your credit card company can advise how they handle this.\n\n<b>3. How will I know if my card has been pre-authorised?</b>\n\nYour available balance will be reduced temporarily by the full amount of your reservation. You may also see “pending transactions” on your credit card account summary. If you’re not sure if your card had been pre-authorised, both the hotel and your credit card company can verify this.\n\n<b>4. How long will the pre-authorisation hold affect my available balance?</b>\n\n Your card provider can better explain this, along with the general terms and conditions associated with their pre-authorisation procedures. These terms vary across the board, so it’s best to contact them for specific details.\n\n<b>5. Will the hold always equal the exact amount of my reservation?</b>\n\nIn most cases, the hotel will pre-authorise your card for the full amount of your reservation. On occasion, you may see an amount slightly higher than the rate shown on Booking.com. If this does happen, the hotel can explain why this has occurred.\n\n<b>6. Will this happen with all bookings made through Booking.com?</b>\n\nHotels reserve the right to pre-authorise your card, but this doesn’t mean it will occur with every booking. Don’t worry, if your card is pre-authorised, both the hotel and your credit card company is there to help. They may also be able to assist you with removing these holds sooner. And remember, reserving a hotel through Booking.com is always free. We never take any payment, nor will we ever pre-authorise your card, for our services.\n\n</string>
+    <string name="already_use">This customer is already registered with us. Please use the previously registered ticket or use a new customer.</string>
+    <string name="los_band_text">Please go to the site information point where we will be able to supply you with another wristband\n\nPlease note that the old wristband will be de-activated and can no longer be used</string>
+    <string name="scan_your_card">Scan your card</string>
+    <string name="add_funds">Add Card</string>
+    <string name="available_funds">Available Funds:</string>
+    <string name="are_you">Are you sure?</string>
+    <string name="enter_passcode">Enter Passcode</string>
+    <string name="invest_onbeat">Invest in OnBeat</string>
+    <string name="info_first"><![CDATA[DOCTOR FLAMINGO is the brainchild of Spanish producer and songwriter Bru Marsé Ortigosa. Born and raised in Barcelona by a family of musicians, he began working in various radio stations & musical venues at a young age. Bru produces music for fashion shows, cinema and brands.\n\n Under the guise of Doctor Flamingo Bru’s debut album delivers a perfect blend of fresh new originals and well-known songs reinterpreting them masterfully for a unique musical adventure that reflects the glamour and glitz of the music he adores.\n]]></string>
+    <string name="or_his_website">or his <font color='#51AADF'>website</font>\n</string>
+    <string name="info_second"><b>DJ Jon Sa Trinxa</b>\n\nBalearic Music is a Kaleidoscope of Genres.\n\nIbiza legend Jon has been playing music since 1987 and plays at exclusive parties all over the world.\n\n He holds the longest DJ Residency on Ibiza, Sa Trinxa, Salinas Beach 1993 – 2019. Jon also played at the legendary Manumission parties for 10 years at Privilege, Space for the We Love Sundays and Pacha for Made in Italy.\n\nJon also holds a residencies at Karma Beach Club Bali and Chi Samui 2020.</string>
+    <string name="info_soundcloud">\nCheck out Jon’s mixes on <font color='#51AADF'>Soundcloud</font>\n\n</string>
+    <string name="account_n">Account\n</string>
+    <string name="do_you_proceed">Do you want to proceed?</string>
+    <string name="pre_auth_card_empty">Funds added to your OnBeat wallet are “pre-authorised” and your card will only be charged for what you actually spend from your OnBeat balance.\nAny money left unspent after the event will be refunded.</string>
+    <string name="pre_auth_card">This will settle your existing pre-authorisation, refund any existing balance and set this new amount as your pre-authorised spending limit.</string>
+    <string name="addCardFind"><font color='#9F07C8'>We will pre-authorise money on your card to add to your wallet… but don’t worry, you’ll only pay for what you spend</font> <font color='#51AADF'><u> Find out more.</u></font></string>
+    <string name="how_this_works">How this works..</string>
+    <string name="how_to_find">How to find us</string>
+    <string name="find_out"><u> Find out more?</u></string>
+    <string name="line_up">Line-up</string>
+    <string name="live_now">LIVE NOW</string>
+    <string name="artist_infos">Artist info</string>
+    <string name="performing">Performing:</string>
+    <string name="artists">Artists</string>
+    <string name="download_transaction">Download transaction history</string>
+    <string name="event_closed">Our event is now closed!</string>
+    <string name="event_enjoy">We hope you enjoyed your time with us. You can still access your full transaction history for this festival.</string>
+    <string name="trouble_shoot">Having trouble downloading the file?\n<font color='#51AADF'><u>Contact us.</u></font></string>
+    <string name="what_s_onbeat"><font color='#51AADF'><u>What is OnBeat?</u></font></string>
+    <string name="what_s_next">What’s next?</string>
+    <string name="event_missed">If you missed our last event or just excited in what we are preparing next, check the app for updates.\n\nWant to be part of our exciting journey?</string>
+    <string name="top_up">Top up</string>
+    <string name="get_there"><u>Get there</u></string>
+    <string name="update">Update</string>
+    <string name="update_app">Update OnBeat ? </string>
+    <string name="update_app_txt">OnBeat App has changed! Please update to the latest version to enjoy all new features!</string>
+
+
+    <string-array name="country_data">
+
+        <item>
+            <countryCode>(+44)</countryCode>
+            <country>United Kingdom</country>
+
+        </item>
+        <item>
+            <countryCode>(+34)</countryCode>
+            <country>Spain</country>
+
+        </item>
+        <item>
+            <countryCode>(+1)</countryCode>
+            <country>United States</country>
+
+        </item>
+<!--        <item>-->
+<!--            <countryCode>(+93)</countryCode>-->
+<!--            <country>Afghanistan</country>-->
+
+<!--        </item>-->
+        <item>
+            <countryCode>(+355)</countryCode>
+            <country>Albania</country>
+
+        </item>
+        <item>
+            <countryCode>(+213)</countryCode>
+            <country>Algeria</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-684)</countryCode>
+            <country>American Samoa</country>
+
+        </item>
+        <item>
+            <countryCode>(+376)</countryCode>
+            <country>Andorra</country>
+
+        </item>
+        <item>
+            <countryCode>(+244)</countryCode>
+            <country>Angola</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-264)</countryCode>
+            <country>Anguilla</country>
+
+        </item>
+        <item>
+            <countryCode>(+672)</countryCode>
+            <country>Antarctica</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-268)</countryCode>
+            <country>Antigua and Barbuda</country>
+
+        </item>
+        <item>
+            <countryCode>(+54)</countryCode>
+            <country>Argentina</country>
+
+        </item>
+        <item>
+            <countryCode>(+374)</countryCode>
+            <country>Armenia</country>
+
+        </item>
+        <item>
+            <countryCode>(+297)</countryCode>
+            <country>Aruba</country>
+
+        </item>
+        <item>
+            <countryCode>(+61)</countryCode>
+            <country>Australia</country>
+
+        </item>
+        <item>
+            <countryCode>(+43)</countryCode>
+            <country>Austria</country>
+
+        </item>
+        <item>
+            <countryCode>(+994)</countryCode>
+            <country>Azerbaijan</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-242)</countryCode>
+            <country>Bahamas</country>
+
+        </item>
+        <item>
+            <countryCode>(+973)</countryCode>
+            <country>Bahrain</country>
+
+        </item>
+        <item>
+            <countryCode>(+880)</countryCode>
+            <country>Bangladesh</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-246)</countryCode>
+            <country>Barbados</country>
+
+        </item>
+        <item>
+            <countryCode>(+375)</countryCode>
+            <country>Belarus</country>
+
+        </item>
+        <item>
+            <countryCode>(+32)</countryCode>
+            <country>Belgium</country>
+
+        </item>
+        <item>
+            <countryCode>(+501)</countryCode>
+            <country>Belize</country>
+
+        </item>
+        <item>
+            <countryCode>(+229)</countryCode>
+            <country>Benin</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-441)</countryCode>
+            <country>Bermuda</country>
+
+        </item>
+        <item>
+            <countryCode>(+975)</countryCode>
+            <country>Bhutan</country>
+
+        </item>
+        <item>
+            <countryCode>(+591)</countryCode>
+            <country>Bolivia</country>
+
+        </item>
+        <item>
+            <countryCode>(+387)</countryCode>
+            <country>Bosnia and Herzegovina</country>
+
+        </item>
+        <item>
+            <countryCode>(+267)</countryCode>
+            <country>Botswana</country>
+
+        </item>
+        <item>
+            <countryCode>(+55)</countryCode>
+            <country>Brazil</country>
+
+        </item>
+        <item>
+            <countryCode>(+246)</countryCode>
+            <country>British Indian Ocean Territory</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-284)</countryCode>
+            <country>British Virgin Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+673)</countryCode>
+            <country>Brunei</country>
+
+        </item>
+        <item>
+            <countryCode>(+359)</countryCode>
+            <country>Bulgaria</country>
+
+        </item>
+        <item>
+            <countryCode>(+226)</countryCode>
+            <country>Burkina Faso</country>
+
+        </item>
+        <item>
+            <countryCode>(+257)</countryCode>
+            <country>Burundi</country>
+
+        </item>
+        <item>
+            <countryCode>(+855)</countryCode>
+            <country>Cambodia</country>
+
+        </item>
+        <item>
+            <countryCode>(+237)</countryCode>
+            <country>Cameroon</country>
+
+        </item>
+        <item>
+            <countryCode>(+1)</countryCode>
+            <country>Canada</country>
+
+        </item>
+        <item>
+            <country>Cape Verde</country>
+            <countryCode>(+238)</countryCode>
+
+        </item>
+        <item>
+            <countryCode>(+1-345)</countryCode>
+            <country>Cayman Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+236)</countryCode>
+            <country>Central African Republic</country>
+
+        </item>
+        <item>
+            <countryCode>(+235)</countryCode>
+            <country>Chad</country>
+
+        </item>
+        <item>
+            <countryCode>(+56)</countryCode>
+            <country>Chile</country>
+
+        </item>
+        <item>
+            <countryCode>(+86)</countryCode>
+            <country>China</country>
+
+        </item>
+        <item>
+            <countryCode>(+61)</countryCode>
+            <country>Christmas Island</country>
+
+        </item>
+        <item>
+            <countryCode>(+61)</countryCode>
+            <country>Cocos Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+57)</countryCode>
+            <country>Colombia</country>
+
+        </item>
+        <item>
+            <countryCode>(+269)</countryCode>
+            <country>Comoros</country>
+
+        </item>
+        <item>
+            <countryCode>(+682)</countryCode>
+            <country>Cook Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+506)</countryCode>
+            <country>Costa Rica</country>
+
+        </item>
+        <item>
+            <countryCode>(+385)</countryCode>
+            <country>Croatia</country>
+
+        </item>
+        <item>
+            <countryCode>(+53)</countryCode>
+            <country>Cuba</country>
+
+        </item>
+        <item>
+            <countryCode>(+599)</countryCode>
+            <country>Curacao</country>
+
+        </item>
+        <item>
+            <countryCode>(+357)</countryCode>
+            <country>Cyprus</country>
+
+        </item>
+        <item>
+            <countryCode>(+420)</countryCode>
+            <country>Czech Republic</country>
+
+        </item>
+        <item>
+            <countryCode>(+243)</countryCode>
+            <country>Democratic Republic of the Congo</country>
+
+        </item>
+        <item>
+            <countryCode>(+45)</countryCode>
+            <country>Denmark</country>
+
+        </item>
+        <item>
+            <countryCode>(+253)</countryCode>
+            <country>Djibouti</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-767)</countryCode>
+            <country>Dominica</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-809, 1-829, 1-849)</countryCode>
+            <country>Dominican Republic</country>
+
+        </item>
+        <item>
+            <countryCode>(+670)</countryCode>
+            <country>East Timor</country>
+
+        </item>
+        <item>
+            <countryCode>(+593)</countryCode>
+            <country>Ecuador</country>
+
+        </item>
+        <item>
+            <countryCode>(+20)</countryCode>
+            <country>Egypt</country>
+
+        </item>
+        <item>
+            <countryCode>(+503)</countryCode>
+            <country>El Salvador</country>
+
+        </item>
+        <item>
+            <countryCode>(+240)</countryCode>
+            <country>Equatorial Guinea</country>
+
+        </item>
+        <item>
+            <countryCode>(+291)</countryCode>
+            <country>Eritrea</country>
+
+        </item>
+        <item>
+            <countryCode>(+372)</countryCode>
+            <country>Estonia</country>
+
+        </item>
+        <item>
+            <countryCode>(+251)</countryCode>
+            <country>Ethiopia</country>
+
+        </item>
+        <item>
+            <countryCode>(+500)</countryCode>
+            <country>Falkland Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+298)</countryCode>
+            <country>Faroe Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+679)</countryCode>
+            <country>Fiji</country>
+
+        </item>
+        <item>
+            <countryCode>(+358)</countryCode>
+            <country>Finland</country>
+
+        </item>
+        <item>
+            <countryCode>(+33)</countryCode>
+            <country>France</country>
+
+        </item>
+        <item>
+            <countryCode>(+689)</countryCode>
+            <country>French Polynesia</country>
+
+        </item>
+        <item>
+            <countryCode>(+241)</countryCode>
+            <country>Gabon</country>
+
+        </item>
+        <item>
+            <countryCode>(+220)</countryCode>
+            <country>Gambia</country>
+
+        </item>
+        <item>
+            <countryCode>(+995)</countryCode>
+            <country>Georgia</country>
+
+        </item>
+        <item>
+            <countryCode>(+49)</countryCode>
+            <country>Germany</country>
+        </item>
+        <item>
+            <countryCode>(+233)</countryCode>
+            <country>Ghana</country>
+
+        </item>
+        <item>
+            <countryCode>(+350)</countryCode>
+            <country>Gibraltar</country>
+
+        </item>
+        <item>
+            <countryCode>(+30)</countryCode>
+            <country>Greece</country>
+
+        </item>
+        <item>
+            <countryCode>(+299)</countryCode>
+            <country>Greenland</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-473)</countryCode>
+            <country>Grenada</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-671)</countryCode>
+            <country>Guam</country>
+
+        </item>
+        <item>
+            <countryCode>(+502)</countryCode>
+            <country>Guatemala</country>
+
+        </item>
+        <item>
+            <countryCode>(+44-1481)</countryCode>
+            <country>Guernsey</country>
+
+        </item>
+        <item>
+            <countryCode>(+224)</countryCode>
+            <country>Guinea</country>
+
+        </item>
+        <item>
+            <countryCode>(+245)</countryCode>
+            <country>Guinea-Bissau</country>
+
+        </item>
+        <item>
+            <countryCode>(+592)</countryCode>
+            <country>Guyana</country>
+
+        </item>
+        <item>
+            <countryCode>(+509)</countryCode>
+            <country>Haiti</country>
+
+        </item>
+        <item>
+            <countryCode>(+504)</countryCode>
+            <country>Honduras</country>
+
+        </item>
+        <item>
+            <countryCode>(+852)</countryCode>
+            <country>Hong Kong</country>
+
+        </item>
+        <item>
+            <countryCode>(+36)</countryCode>
+            <country>Hungary</country>
+
+        </item>
+        <item>
+            <countryCode>(+354)</countryCode>
+            <country>Iceland</country>
+
+        </item>
+        <item>
+            <countryCode>(+91)</countryCode>
+            <country>India</country>
+
+        </item>
+        <item>
+            <countryCode>(+62)</countryCode>
+            <country>Indonesia</country>
+
+        </item>
+        <item>
+            <countryCode>(+98)</countryCode>
+            <country>Iran</country>
+
+        </item>
+        <item>
+            <countryCode>(+964)</countryCode>
+            <country>Iraq</country>
+
+        </item>
+        <item>
+            <countryCode>(+353)</countryCode>
+            <country>Ireland</country>
+
+        </item>
+        <item>
+            <countryCode>(+44-1624)</countryCode>
+            <country>Isle of Man</country>
+
+        </item>
+        <item>
+            <countryCode>(+972)</countryCode>
+            <country>Israel</country>
+
+        </item>
+        <item>
+            <countryCode>(+39)</countryCode>
+            <country>Italy</country>
+
+        </item>
+        <item>
+            <countryCode>(+225)</countryCode>
+            <country>Ivory Coast</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-876)</countryCode>
+            <country>Jamaica</country>
+
+        </item>
+        <item>
+            <countryCode>(+81)</countryCode>
+            <country>Japan</country>
+
+        </item>
+        <item>
+            <countryCode>(+44-1534)</countryCode>
+            <country>Jersey</country>
+
+        </item>
+        <item>
+            <countryCode>(+962)</countryCode>
+            <country>Jordan</country>
+
+        </item>
+        <item>
+            <countryCode>(+7)</countryCode>
+            <country>Kazakhstan</country>
+
+        </item>
+        <item>
+            <countryCode>(+254)</countryCode>
+            <country>Kenya</country>
+
+        </item>
+        <item>
+            <countryCode>(+686)</countryCode>
+            <country>Kiribati</country>
+
+        </item>
+        <item>
+            <countryCode>(+383)</countryCode>
+            <country>Kosovo</country>
+
+        </item>
+        <item>
+            <countryCode>(+965)</countryCode>
+            <country>Kuwait</country>
+
+        </item>
+        <item>
+            <countryCode>(+996)</countryCode>
+            <country>Kyrgyzstan</country>
+
+        </item>
+        <item>
+            <countryCode>(+856)</countryCode>
+            <country>Laos</country>
+
+        </item>
+        <item>
+            <countryCode>(+371)</countryCode>
+            <country>Latvia</country>
+
+        </item>
+        <item>
+            <countryCode>(+961)</countryCode>
+            <country>Lebanon</country>
+
+        </item>
+        <item>
+            <countryCode>(+266)</countryCode>
+            <country>Lesotho</country>
+
+        </item>
+        <item>
+            <countryCode>(+231)</countryCode>
+            <country>Liberia</country>
+
+        </item>
+        <item>
+            <countryCode>(+218)</countryCode>
+            <country>Libya</country>
+
+        </item>
+        <item>
+            <countryCode>(+423)</countryCode>
+            <country>Liechtenstein</country>
+
+        </item>
+        <item>
+            <countryCode>(+370)</countryCode>
+            <country>Lithuania</country>
+
+        </item>
+        <item>
+            <countryCode>(+352)</countryCode>
+            <country>Luxembourg</country>
+
+        </item>
+        <item>
+            <countryCode>(+853)</countryCode>
+            <country>Macao</country>
+
+        </item>
+        <item>
+            <countryCode>(+389)</countryCode>
+            <country>Macedonia</country>
+
+        </item>
+        <item>
+            <countryCode>(+261)</countryCode>
+            <country>Madagascar</country>
+
+        </item>
+        <item>
+            <countryCode>(+265)</countryCode>
+            <country>Malawi</country>
+
+        </item>
+        <item>
+            <countryCode>(+60)</countryCode>
+            <country>Malaysia</country>
+
+        </item>
+        <item>
+            <countryCode>(+960)</countryCode>
+            <country>Maldives</country>
+
+        </item>
+        <item>
+            <countryCode>(+223)</countryCode>
+            <country>Mali</country>
+
+        </item>
+        <item>
+            <countryCode>(+356)</countryCode>
+            <country>Malta</country>
+
+        </item>
+        <item>
+            <countryCode>(+692)</countryCode>
+            <country>Marshall Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+222)</countryCode>
+            <country>Mauritania</country>
+
+        </item>
+        <item>
+            <countryCode>(+230)</countryCode>
+            <country>Mauritius</country>
+
+        </item>
+        <item>
+            <countryCode>(+262)</countryCode>
+            <country>Mayotte</country>
+
+        </item>
+        <item>
+            <countryCode>(+52)</countryCode>
+            <country>Mexico</country>
+
+        </item>
+        <item>
+            <countryCode>(+691)</countryCode>
+            <country>Micronesia</country>
+
+        </item>
+        <item>
+            <countryCode>(+373)</countryCode>
+            <country>Moldova</country>
+
+        </item>
+        <item>
+            <countryCode>(+377)</countryCode>
+            <country>Monaco</country>
+
+        </item>
+        <item>
+            <countryCode>(+976)</countryCode>
+            <country>Mongolia</country>
+
+        </item>
+        <item>
+            <countryCode>(+382)</countryCode>
+            <country>Montenegro</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-664)</countryCode>
+            <country>Montserrat</country>
+
+        </item>
+        <item>
+            <countryCode>(+212)</countryCode>
+            <country>Morocco</country>
+
+        </item>
+        <item>
+            <countryCode>(+258)</countryCode>
+            <country>Mozambique</country>
+
+        </item>
+        <item>
+            <countryCode>(+95)</countryCode>
+            <country>Myanmar</country>
+
+        </item>
+        <item>
+            <countryCode>(+264)</countryCode>
+            <country>Namibia</country>
+
+        </item>
+        <item>
+            <countryCode>(+674)</countryCode>
+            <country>Nauru</country>
+
+        </item>
+        <item>
+            <countryCode>(+977)</countryCode>
+            <country>Nepal</country>
+
+        </item>
+        <item>
+            <countryCode>(+31)</countryCode>
+            <country>Netherlands</country>
+
+        </item>
+        <item>
+            <countryCode>(+599)</countryCode>
+            <country>Netherlands Antilles</country>
+
+        </item>
+        <item>
+            <countryCode>(+687)</countryCode>
+            <country>New Caledonia</country>
+
+        </item>
+        <item>
+            <countryCode>(+64)</countryCode>
+            <country>New Zealand</country>
+
+        </item>
+        <item>
+            <countryCode>(+505)</countryCode>
+            <country>Nicaragua</country>
+
+        </item>
+        <item>
+            <countryCode>(+227)</countryCode>
+            <country>Niger</country>
+
+        </item>
+        <item>
+            <countryCode>(+234)</countryCode>
+            <country>Nigeria</country>
+
+        </item>
+        <item>
+            <countryCode>(+683)</countryCode>
+            <country>Niue</country>
+
+        </item>
+        <item>
+            <countryCode>(+850)</countryCode>
+            <country>North Korea</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-670)</countryCode>
+            <country>Northern Mariana Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+47)</countryCode>
+            <country>Norway</country>
+
+        </item>
+        <item>
+            <countryCode>(+968)</countryCode>
+            <country>Oman</country>
+
+        </item>
+        <item>
+            <countryCode>(+92)</countryCode>
+            <country>Pakistan</country>
+
+        </item>
+        <item>
+            <countryCode>(+680)</countryCode>
+            <country>Palau</country>
+
+        </item>
+        <item>
+            <countryCode>(+970)</countryCode>
+            <country>Palestine</country>
+
+        </item>
+        <item>
+            <countryCode>(+507)</countryCode>
+            <country>Panama</country>
+
+        </item>
+        <item>
+            <countryCode>(+675)</countryCode>
+            <country>Papua New Guinea</country>
+
+        </item>
+        <item>
+            <countryCode>(+595)</countryCode>
+            <country>Paraguay</country>
+
+        </item>
+        <item>
+            <countryCode>(+51)</countryCode>
+            <country>Peru</country>
+
+        </item>
+        <item>
+            <countryCode>(+63)</countryCode>
+            <country>Philippines</country>
+
+        </item>
+        <item>
+            <countryCode>(+64)</countryCode>
+            <country>Pitcairn</country>
+
+        </item>
+        <item>
+            <countryCode>(+48)</countryCode>
+            <country>Poland</country>
+
+        </item>
+        <item>
+            <countryCode>(+351)</countryCode>
+            <country>Portugal</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-787, 1-939)</countryCode>
+            <country>Puerto Rico</country>
+
+        </item>
+        <item>
+            <countryCode>(+974)</countryCode>
+            <country>Qatar</country>
+
+        </item>
+        <item>
+            <countryCode>(+242)</countryCode>
+            <country>Republic of the Congo</country>
+
+        </item>
+        <item>
+            <countryCode>(+262)</countryCode>
+            <country>Reunion</country>
+
+        </item>
+        <item>
+            <countryCode>(+40)</countryCode>
+            <country>Romania</country>
+
+        </item>
+        <item>
+            <countryCode>(+7)</countryCode>
+            <country>Russia</country>
+
+        </item>
+        <item>
+            <countryCode>(+250)</countryCode>
+            <country>Rwanda</country>
+
+        </item>
+        <item>
+            <countryCode>(+590)</countryCode>
+            <country>Saint Barthelemy</country>
+
+        </item>
+        <item>
+            <countryCode>(+290)</countryCode>
+            <country>Saint Helena</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-869)</countryCode>
+            <country>Saint Kitts and Nevis</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-758)</countryCode>
+            <country>Saint Lucia</country>
+
+        </item>
+        <item>
+            <countryCode>(+590)</countryCode>
+            <country>Saint Martin</country>
+
+        </item>
+        <item>
+            <countryCode>(+508)</countryCode>
+            <country>Saint Pierre and Miquelon</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-784)</countryCode>
+            <country>Saint Vincent and the Grenadines</country>
+
+        </item>
+        <item>
+            <countryCode>(+685)</countryCode>
+            <country>Samoa</country>
+
+        </item>
+        <item>
+            <countryCode>(+378)</countryCode>
+            <country>San Marino</country>
+
+        </item>
+        <item>
+            <countryCode>(+239)</countryCode>
+            <country>Sao Tome and Principe</country>
+
+        </item>
+        <item>
+            <countryCode>(+966)</countryCode>
+            <country>Saudi Arabia</country>
+
+        </item>
+        <item>
+            <countryCode>(+221)</countryCode>
+            <country>Senegal</country>
+
+        </item>
+        <item>
+            <countryCode>(+381)</countryCode>
+            <country>Serbia</country>
+
+        </item>
+        <item>
+            <countryCode>(+248)</countryCode>
+            <country>Seychelles</country>
+
+        </item>
+        <item>
+            <countryCode>(+232)</countryCode>
+            <country>Sierra Leone</country>
+
+        </item>
+        <item>
+            <countryCode>(+65)</countryCode>
+            <country>Singapore</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-721)</countryCode>
+            <country>Sint Maarten</country>
+
+        </item>
+        <item>
+            <countryCode>(+421)</countryCode>
+            <country>Slovakia</country>
+
+        </item>
+        <item>
+            <countryCode>(+386)</countryCode>
+            <country>Slovenia</country>
+
+        </item>
+        <item>
+            <countryCode>(+677)</countryCode>
+            <country>Solomon Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+252)</countryCode>
+            <country>Somalia</country>
+
+        </item>
+        <item>
+            <countryCode>(+27)</countryCode>
+            <country>South Africa</country>
+
+        </item>
+        <item>
+            <countryCode>(+82)</countryCode>
+            <country>South Korea</country>
+
+        </item>
+        <item>
+            <countryCode>(+211)</countryCode>
+            <country>South Sudan</country>
+
+        </item>
+
+        <item>
+            <countryCode>(+94)</countryCode>
+            <country>Sri Lanka</country>
+
+        </item>
+        <item>
+            <countryCode>(+249)</countryCode>
+            <country>Sudan</country>
+
+        </item>
+        <item>
+            <countryCode>(+597)</countryCode>
+            <country>Suriname</country>
+
+        </item>
+        <item>
+            <countryCode>(+47)</countryCode>
+            <country>Svalbard and Jan Mayen</country>
+
+        </item>
+        <item>
+            <countryCode>(+268)</countryCode>
+            <country>Swaziland</country>
+
+        </item>
+        <item>
+            <countryCode>(+46)</countryCode>
+            <country>Sweden</country>
+
+        </item>
+        <item>
+            <countryCode>(+41)</countryCode>
+            <country>Switzerland</country>
+
+        </item>
+        <item>
+            <countryCode>(+963)</countryCode>
+            <country>Syria</country>
+
+        </item>
+        <item>
+            <countryCode>(+886)</countryCode>
+            <country>Taiwan</country>
+
+        </item>
+        <item>
+            <countryCode>(+992)</countryCode>
+            <country>Tajikistan</country>
+
+        </item>
+        <item>
+            <countryCode>(+255)</countryCode>
+            <country>Tanzania</country>
+
+        </item>
+        <item>
+            <countryCode>(+66)</countryCode>
+            <country>Thailand</country>
+
+        </item>
+        <item>
+            <countryCode>(+228)</countryCode>
+            <country>Togo</country>
+
+        </item>
+        <item>
+            <countryCode>(+690)</countryCode>
+            <country>Tokelau</country>
+
+        </item>
+        <item>
+            <countryCode>(+676)</countryCode>
+            <country>Tonga</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-868)</countryCode>
+            <country>Trinidad and Tobago</country>
+
+        </item>
+        <item>
+            <countryCode>(+216)</countryCode>
+            <country>Tunisia</country>
+
+        </item>
+        <item>
+            <countryCode>(+90)</countryCode>
+            <country>Turkey</country>
+
+        </item>
+        <item>
+            <countryCode>(+993)</countryCode>
+            <country>Turkmenistan</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-649)</countryCode>
+            <country>Turks and Caicos Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+688)</countryCode>
+            <country>Tuvalu</country>
+
+        </item>
+        <item>
+            <countryCode>(+1-340)</countryCode>
+            <country>U.S. Virgin Islands</country>
+
+        </item>
+        <item>
+            <countryCode>(+256)</countryCode>
+            <country>Uganda</country>
+
+        </item>
+        <item>
+            <countryCode>(+380)</countryCode>
+            <country>Ukraine</country>
+
+        </item>
+        <item>
+            <countryCode>(+971)</countryCode>
+            <country>United Arab Emirates</country>
+
+        </item>
+
+        <item>
+            <countryCode>(+598)</countryCode>
+            <country>Uruguay</country>
+
+        </item>
+        <item>
+            <countryCode>(+998)</countryCode>
+            <country>Uzbekistan</country>
+
+        </item>
+        <item>
+            <countryCode>(+678)</countryCode>
+            <country>Vanuatu</country>
+
+        </item>
+        <item>
+            <countryCode>(+379)</countryCode>
+            <country>Vatican</country>
+
+        </item>
+        <item>
+            <countryCode>(+58)</countryCode>
+            <country>Venezuela</country>
+
+        </item>
+        <item>
+            <countryCode>(+84)</countryCode>
+            <country>Vietnam</country>
+
+        </item>
+        <item>
+            <countryCode>(+681)</countryCode>
+            <country>Wallis and Futuna</country>
+
+        </item>
+        <item>
+            <countryCode>(+212)</countryCode>
+            <country>Western Sahara</country>
+
+        </item>
+        <item>
+            <countryCode>(+967)</countryCode>
+            <country>Yemen</country>
+
+        </item>
+        <item>
+            <countryCode>(+260)</countryCode>
+            <country>Zambia</country>
+
+        </item>
+        <item>
+            <countryCode>(+263)</countryCode>
+            <country>Zimbabwe</country>
+
+        </item>
+    </string-array>
+
+</resources>

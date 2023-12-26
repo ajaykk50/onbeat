@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/pageMargin"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/toopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:src="@drawable/ic_logo"
+            android:visibility="visible"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_onbeat"
+            android:textSize="@dimen/mainHeading"
+            android:textColor="@color/light_text"
+            android:fontFamily="@font/os_font_regular"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/scan_ticket"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/bodyText"
+        android:fontFamily="@font/open_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toopBar"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/containText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/containButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTile">
+
+        <LinearLayout
+            android:id="@+id/btScanQr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonHeight"
+            android:background="@drawable/ic_bg_graident_bt"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_qr_code_on_ticket"
+                android:textColor="@color/white"
+                android:textSize="@dimen/buttonText"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_camera_scan" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp"
+            android:text="Or"
+            android:textSize="@dimen/normalText"
+            android:textColor="@color/light_text"
+            android:fontFamily="@font/open_sans"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/containPhone"
+            style="@style/loginEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containLocation">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editcode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextHeight"
+                android:background="@drawable/bg_hash_box"
+                android:hint="@string/enter_ticket_number"
+                android:maxLines="1"
+                android:textColor="@color/light_text"
+                android:textSize="@dimen/editTextSize"
+                android:singleLine="true"
+                android:imeOptions="actionDone">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|top">
+            <LinearLayout
+                android:id="@+id/containNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_vilot"
+                android:gravity="center|top"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_warning" />
+
+                <TextView
+                    android:id="@+id/txtFundAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#9F07C8"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Ticket reference can be found next to QR code on your ticket "
+                    android:textSize="@dimen/bodyText" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btWhatOn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/what_is_onbeat"
+                android:textColor="@color/accent_color"
+                android:autoLink="all"
+                android:textSize="@dimen/linkText"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containText">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="0.1"
+            android:background="@drawable/ic_bg_graident_bt"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textSize="@dimen/buttonText"
+            android:fontFamily="@font/open_sans"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

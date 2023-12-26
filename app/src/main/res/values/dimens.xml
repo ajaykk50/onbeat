@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--New text size-->
+    <dimen name="topBar">@dimen/_35sdp</dimen>
+    <dimen name="pageMargin">@dimen/_15sdp</dimen>
+    <dimen name="mainHeading">@dimen/_17sdp</dimen>
+    <dimen name="subHeading">@dimen/_11sdp</dimen>
+    <dimen name="bodyText">@dimen/_11sdp</dimen>
+    <dimen name="bodyBoldText">@dimen/_12sdp</dimen>
+    <dimen name="normalText">@dimen/_11sdp</dimen>
+    <dimen name="iconSize">@dimen/_95sdp</dimen>
+    <dimen name="buttonHeight">@dimen/_40sdp</dimen>
+    <dimen name="editTextHeight">@dimen/_42sdp</dimen>
+    <dimen name="pinBox">@dimen/_50sdp</dimen>
+    <dimen name="buttonText">@dimen/_12sdp</dimen>
+    <dimen name="linkText">@dimen/_10sdp</dimen>
+    <dimen name="editTextSize">@dimen/_12sdp</dimen>
+<!--    <dimen name="subHeading">20dp</dimen>-->
+<!--    <dimen name="normalText">16dp</dimen>-->
+    <dimen name="iconToTop">60dp</dimen>
+<!--    <dimen name="iconSize">120dp</dimen>-->
+<!--    <dimen name="buttonHeight">52dp</dimen>-->
+<!--    <dimen name="editTextHeight">60dp</dimen>-->
+<!--    <dimen name="buttonText">16dp</dimen>-->
+<!--    <dimen name="linkText">14dp</dimen>-->
+<!--    <dimen name="editTextSize">14dp</dimen>-->
+
+<!--    <dimen name="pageMargin">24dp</dimen>-->
+<!--    <dimen name="mainHeading">24dp</dimen>-->
+<!--    <dimen name="subHeading">20dp</dimen>-->
+<!--    <dimen name="normalText">16dp</dimen>-->
+<!--    <dimen name="iconToTop">60dp</dimen>-->
+<!--    <dimen name="iconSize">120dp</dimen>-->
+<!--    <dimen name="buttonHeight">52dp</dimen>-->
+<!--    <dimen name="editTextHeight">60dp</dimen>-->
+<!--    <dimen name="buttonText">16dp</dimen>-->
+<!--    <dimen name="linkText">14dp</dimen>-->
+<!--    <dimen name="editTextSize">14dp</dimen>-->
+
+</resources>

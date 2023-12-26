@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btLimit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:text="£20"
+        android:textColor="@color/white"
+        android:layout_weight="0.1"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/buttonText"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"/>
+    <View
+        android:id="@+id/space"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

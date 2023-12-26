@@ -1,0 +1,218 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
+
+android {
+    compileSdkVersion 32
+//    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "www.onbeatapps.com"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 15
+        versionName "15.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    //new old
+//          buildConfigField("String", "STRIP_KEY", "\"pk_test_51JDSjAHS4W4sRkKuuaHjSvQIhOSlhkNwOH2UgRAHDRbN6SyhUsvmbPyrCTA7jvKUVkz9v1j11lgJOrrMwVsnXq2t00ZfSY7yWB\"") //old DEV
+
+    buildTypes {
+        debug {
+            debuggable true
+//            buildConfigField("String", "API_BASE_URL", "\"http://13.232.255.198:1337/\"") // old
+           // buildConfigField("String", "API_BASE_URL", "\"http://3.109.174.117:1337/\"") //ec2
+           // buildConfigField("String", "API_BASE_URL", "\"https://payout.onbeatapp.com/\"")//Production
+            buildConfigField("String", "API_BASE_URL", "\"https://onbeat.panasatech.com/\"") //ecs
+            buildConfigField("String", "EVENT_IMAGE", "\"https://onbeat-splash.s3.ap-south-1.amazonaws.com/event_image.png\"")
+            buildConfigField("String", "TERMS_CONDITION", "\"https://payout.onbeatapp.com/terms-conditions\"")
+//          buildConfigField("String", "PRIVACY_POLICY", "\"https://payout.onbeata  pp.com/privacy-policy\"")
+            //buildConfigField("String", "STRIP_KEY", "\"pk_live_51JHkljAmalqIj4TZSrh6wVyNGXkEbFvUmap9WfuGsj6z8yahNwVPvr3aYWiGlEuKlCQTinIyLUfndLyWrxKazTja00s0b9hfRO\"") //PRO
+
+            //old test ec2
+           // buildConfigField("String", "STRIP_KEY", "\"pk_test_51JNXrOI1eG5cXLwHkCoQ6drUDMrDznfZS4ZWmWFqHfFmasGXeybbenK4DcxBgPS7IeWsdavU0jqdk3Z3VRmVrosm00ZHMFgMvs\"")//DEV
+
+            //new test ecs
+            buildConfigField("String", "STRIP_KEY", "\"pk_test_51L5RqiHmzlraJOgiiNR6N3SzMcCgAgdpgIvXkw89IlWeT3yUT27NbjLiV7iMRrsTai2ZRUiFdIyBX6mgugzEmnT900NsM08BK3\"")
+            //DEV
+           // buildConfigField("String", "STRIP_KEY", "\"pk_test_51L5RqiHmzlraJOgiiNR6N3SzMcCgAgdpgIvXkw89IlWeT3yUT27NbjLiV7iMRrsTai2ZRUiFdIyBX6mgugzEmnT900NsM08BK3\"")
+
+
+
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+           // buildConfigField("String", "API_BASE_URL", "\"https://payout.onbeatapp.com/\"")
+            buildConfigField("String", "API_BASE_URL", "\"http://3.109.174.117:1337/\"")
+            buildConfigField("String", "EVENT_IMAGE", "\"https://onbeat-splash.s3.ap-south-1.amazonaws.com/event_image.png\"")
+            buildConfigField("String", "TERMS_CONDITION", "\"https://payout.onbeatapp.com/terms-conditions\"")
+           // buildConfigField("String", "STRIP_KEY", "\"pk_live_51JHkljAmalqIj4TZSrh6wVyNGXkEbFvUmap9WfuGsj6z8yahNwVPvr3aYWiGlEuKlCQTinIyLUfndLyWrxKazTja00s0b9hfRO\"")
+            // buildConfigField("String", "STRIP_KEY", "\"pk_test_51JNXrOI1eG5cXLwHkCoQ6drUDMrDznfZS4ZWmWFqHfFmasGXeybbenK4DcxBgPS7IeWsdavU0jqdk3Z3VRmVrosm00ZHMFgMvs\"")//DEV
+            // buildConfigField("String", "STRIP_KEY", "\"pk_test_51L5RqiHmzlraJOgiiNR6N3SzMcCgAgdpgIvXkw89IlWeT3yUT27NbjLiV7iMRrsTai2ZRUiFdIyBX6mgugzEmnT900NsM08BK3\"")
+            //DEV
+            buildConfigField("String", "STRIP_KEY", "\"pk_test_51L5RqiHmzlraJOgiiNR6N3SzMcCgAgdpgIvXkw89IlWeT3yUT27NbjLiV7iMRrsTai2ZRUiFdIyBX6mgugzEmnT900NsM08BK3\"")
+
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.7.0'
+//    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+
+    //DI hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-android-compiler:2.38.1"
+
+
+    //Architecture components
+    def lifecycle_version = "2.3.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    //viewModel+Hilt
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03'
+    // When using Kotlin.
+    kapt 'androidx.hilt:hilt-compiler:1.0.0-beta01'
+
+    //Room
+    def room_version = "2.2.5"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //Serialization
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //API
+    def retrofit = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+
+    //Navigation
+    def nav_version = "2.3.5"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
+
+    //Glide
+    def glid_version = "4.13.1"
+    implementation "com.github.bumptech.glide:glide:$glid_version"
+    kapt "com.github.bumptech.glide:compiler:$glid_version"
+
+    //paging
+    implementation "androidx.paging:paging-runtime-ktx:3.0.0-beta03"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
+
+
+    //size
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+
+    //jsoup
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha01"
+
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation "org.jetbrains.anko:anko-commons:0.10.4"
+
+    //pinEdittext
+    api 'com.poovam:pin-edittext-field:1.2.3'
+
+    //FacId
+    implementation 'androidx.biometric:biometric:1.0.1'
+
+    //QRCode scanner
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+    //camerSDK
+    implementation 'io.card:android-sdk:5.5.0'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.1.0'
+
+    //runTime Permission
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+
+    //FireBase
+    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.0'
+    implementation platform('com.google.firebase:firebase-bom:28.3.0')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    //GoogleLogin
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    //fbLogin
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+//    implementation 'com.stripe:stripe-android:16.10.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.1'
+
+//google Pay
+    implementation 'com.stripe:stripe-android:20.1.0'
+//    implementation 'com.stripe:stripe-android:19.3.0'
+
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
+
+
+    // define any required OkHttp artifacts without version
+    implementation "com.squareup.okhttp3:okhttp:4.3.1"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.3.1"
+
+    implementation 'com.codesgood:justifiedtextview:1.1.0'
+
+}
+
+kapt {
+    correctErrorTypes = true
+}

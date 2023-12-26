@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingConstraints"
+    android:layout_margin="20dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:tint="@color/black"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bahnschrif"
+        android:gravity="center"
+        android:text="@string/unlink_ticket1"
+        android:textColor="@color/light_text"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/containToolBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/txtLostBand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        android:text="@string/no_loger_attend"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/light_text"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlink_note"
+        app:layout_constraintBottom_toTopOf="@+id/continButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textSize="15sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#707070"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/continButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAllCaps="false"
+            android:theme="@style/buttonStyle"
+            android:fontFamily="@font/open_sans"
+            android:background="@drawable/ic_bg_graident_bt"
+            android:textColor="@color/white"
+            android:text="@string/no"
+            android:layout_marginEnd="@dimen/_5sdp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:theme="@style/buttonStyle"
+            android:fontFamily="@font/open_sans"
+            android:background="@drawable/bg_blue_line_box"
+            android:textColor="@color/light_button"
+            android:text="@string/yes"
+            android:layout_weight="0.1"
+            android:layout_marginStart="@dimen/_5sdp"/>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

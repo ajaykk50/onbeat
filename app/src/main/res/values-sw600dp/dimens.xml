@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--New text size-->
+    <dimen name="h1">42sp</dimen>
+    <dimen name="h2">39sp</dimen>
+    <dimen name="h3">36sp</dimen>
+    <dimen name="h4">33sp</dimen>
+    <dimen name="h5">30sp</dimen>
+    <dimen name="h6">27sp</dimen>
+    <dimen name="h7">24sp</dimen>
+    <dimen name="h8">21sp</dimen>
+    <dimen name="h9">18sp</dimen>
+    <dimen name="h10">15sp</dimen>
+    <dimen name="h11">12sp</dimen>
+    <dimen name="h12">9sp</dimen>
+    <dimen name="h13">6sp</dimen>
+    <dimen name="h14">3sp</dimen>
+
+    <dimen name="spacing_minus_half">-3dp</dimen>
+    <dimen name="spacing_minus_one">-6dp</dimen>
+    <dimen name="spacing_minus_two">-12dp</dimen>
+    <dimen name="spacing_minus_three">-18dp</dimen>
+    <dimen name="spacing_minus_six">-36dp</dimen>
+    <dimen name="spacing_minus_eight">-48dp</dimen>
+
+    <dimen name="spacing_point_five">0.75dp</dimen>
+    <dimen name="spacing_quater">1.5dp</dimen>
+    <dimen name="spacing_half">3dp</dimen>
+    <dimen name="spacing_one">6dp</dimen>
+    <dimen name="spacing_two">12dp</dimen>
+    <dimen name="spacing_three">18dp</dimen>
+    <dimen name="spacing_four">24dp</dimen>
+    <dimen name="spacing_five">30dp</dimen>
+    <dimen name="spacing_six">36dp</dimen>
+    <dimen name="spacing_seven">42dp</dimen>
+    <dimen name="spacing_eight">48dp</dimen>
+    <dimen name="spacing_nine">54dp</dimen>
+    <dimen name="spacing_ten">60dp</dimen>
+    <dimen name="spacing_eleven">66dp</dimen>
+    <dimen name="spacing_twelve">72dp</dimen>
+    <dimen name="spacing_thirteen">78dp</dimen>
+    <dimen name="spacing_fourteen">84dp</dimen>
+    <dimen name="spacing_fifteen">90dp</dimen>
+
+
+    <dimen name="spacing_seven_zero">105dp</dimen>
+    <dimen name="spacing_eight_zero">120dp</dimen>
+    <dimen name="spacing_hundred">150dp</dimen>
+    <dimen name="spacing_one_four_zero">210dp</dimen>
+    <dimen name="spacing_one_two_zero">180dp</dimen>
+    <dimen name="spacing_one_six_zero">240dp</dimen>
+
+
+    <dimen name="host_width">750dp</dimen>
+</resources>

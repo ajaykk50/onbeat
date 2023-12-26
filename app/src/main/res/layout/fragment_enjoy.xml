@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    tools:ignore="MissingConstraints">
+
+
+    <LinearLayout
+        android:id="@+id/containText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/containButton">
+        <TextView
+            android:id="@+id/toopBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|start"
+            android:text="@string/enjoy_your_festival"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColor="@color/light_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/os_font_regular"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congrats!"
+            android:fontFamily="@font/os_font_regular"
+            android:textSize="@dimen/mainHeading"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logi_complect"
+            android:layout_gravity="center"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congrats_enjoy_your_festival"
+            android:fontFamily="@font/os_font_regular"
+            android:textSize="@dimen/mainHeading"
+            android:textColor="@color/light_text"
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/containButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containText">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btLetGo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonHeight"
+            android:text="@string/let_s_go"
+            android:textAllCaps="false"
+           android:background="@drawable/ic_bg_graident_bt"
+            android:textColor="@color/white"
+            android:layout_weight="0.1"
+            android:textStyle="bold"
+            android:textSize="@dimen/buttonText"
+            android:fontFamily="@font/open_sans"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

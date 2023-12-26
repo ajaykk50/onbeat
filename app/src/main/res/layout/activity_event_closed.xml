@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/pageMargin">
+
+        <LinearLayout
+            android:id="@+id/toopBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:layout_width="@dimen/iconSize"
+                android:layout_height="@dimen/iconSize"
+                android:src="@drawable/ic_logo"
+                android:visibility="visible"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_closed"
+                android:textSize="@dimen/mainHeading"
+                android:textColor="@color/light_text"
+                android:fontFamily="@font/os_font_regular"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtTile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/event_enjoy"
+            android:textColor="@color/light_text"
+            android:textSize="@dimen/bodyBoldText"
+            android:fontFamily="@font/bahnschrif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toopBar"
+            android:visibility="visible"
+            android:paddingHorizontal="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:id="@+id/containText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTile">
+
+            <LinearLayout
+                android:id="@+id/btDowload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/ic_bg_graident_bt"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/download_transaction"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/buttonText"
+                    android:fontFamily="@font/roboto_bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/trouble_shoot"
+                android:textSize="@dimen/normalText"
+                android:textColor="@color/light_text"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#CCCCCC"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/what_s_next"
+                android:fontFamily="@font/os_font_regular"
+                android:textSize="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/light_text"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/event_missed"
+                android:textColor="@color/light_text"
+                android:textSize="@dimen/bodyBoldText"
+                android:fontFamily="@font/bahnschrif"
+                android:layout_marginTop="@dimen/_15sdp"/>
+            <LinearLayout
+                android:id="@+id/btInvest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/ic_bg_graident_bt"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containText"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invest_onbeat"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/buttonText"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btWhatOnbeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/what_s_onbeat"
+                android:textSize="@dimen/normalText"
+                android:textColor="@color/light_text"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+

@@ -1,0 +1,100 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EmjaysCustomer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#51AADF</item>
+        <item name="colorPrimaryVariant">#51AADF</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#51AADF</item>
+        <item name="colorSecondaryVariant">#212121</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/light_text</item>
+<!--        <item name="fontFamily">@font/open_sans</item>-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+<!--        <item name="cornerSize">@dimen/spacing_two</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="DialogStyle" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="dialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_from_bottom</item>
+    </style>
+
+    <style name="loginEditTextStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+<!--        <item name="android:labelTextSize">@dimen/h8</item>-->
+    </style>
+
+    <style name="accountEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="background">@color/colorTransparent</item>
+    </style>
+
+    <style name="HeadBoldText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+    <style name="BoldSubText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="HeadText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="SubText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="SmallText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="sideMenuText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/light_text</item>
+        <item name="android:textSize">@dimen/mainHeading</item>
+        <item name="listPreferredItemHeightSmall">100dp</item>
+    </style>
+    <style name="NavigationTheme" parent="Theme.EmjaysCustomer">
+        <item name="listPreferredItemHeightSmall">70dp</item>
+    </style>
+
+    <style name="CustomTextView" parent="android:Widget.TextView">
+
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+    <style name="buttonStyle" parent="android:Widget.Button">
+
+    </style>
+
+
+
+</resources>

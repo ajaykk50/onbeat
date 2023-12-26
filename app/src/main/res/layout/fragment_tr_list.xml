@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/pageMargin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topBar"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:tint="@color/black"
+            android:src="@drawable/ic_back"
+            app:layout_constraintTop_toTopOf="@+id/txtTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTitle"
+           android:paddingEnd="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/transactions_list"
+           android:theme="@style/HeadText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btDowload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/download_transaction"
+        android:background="@drawable/bg_gray_button"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textAllCaps="false"
+        android:textSize="@dimen/buttonText"
+        app:layout_constraintTop_toBottomOf="@+id/containToolBar"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containTr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btDowload"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/labeltransation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+           android:theme="@style/BoldSubText"
+            android:text="@string/transactions"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelSpent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:theme="@style/BoldSubText"
+            android:text="@string/total_spent"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTotalSpend"
+            app:layout_constraintEnd_toStartOf="@+id/txtTotalSpend"
+            app:layout_constraintTop_toTopOf="@+id/txtTotalSpend" />
+
+        <TextView
+            android:id="@+id/txtTotalSpend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/BoldSubText"
+            android:text="00.0"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/labeltransation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containTr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_10sdp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyTrans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/txtNodat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_transaction"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

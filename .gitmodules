@@ -1,0 +1,3 @@
+[submodule "onbeat-qa-automation-android"]
+	path = onbeat-qa-automation-android
+	url = https://github.com/onbeat-panasatech/onbeat-qa-automation-android

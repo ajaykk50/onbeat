@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "188683030091",
+    "project_id": "onbeatapps",
+    "storage_bucket": "onbeatapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188683030091:android:da64bef972096065cf47ce",
+        "android_client_info": {
+          "package_name": "www.onbeatapps.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188683030091-06kg5ov3rqo8149bses5p9nhscviepas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.onbeatapps.com",
+            "certificate_hash": "71c31f790fbd51e16f5243844c9ae49b85d33ecb"
+          }
+        },
+        {
+          "client_id": "188683030091-7drv9njsr69ppihjd4r2idci5mpqbt5g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.onbeatapps.com",
+            "certificate_hash": "5c4d25cf69a9603d224062bd220676f904185343"
+          }
+        },
+        {
+          "client_id": "188683030091-sogqs60m5s27nceahhboln111gad2cfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.onbeatapps.com",
+            "certificate_hash": "c92527ec787e6456ce0ecf9ce1d174d77e5ff2b3"
+          }
+        },
+        {
+          "client_id": "188683030091-gi0r64cehgko8j2cr6qu3vus9jmti7h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC75A0Dp-WWXuSDFgdcyu1m7sDxC2h6sIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188683030091-gi0r64cehgko8j2cr6qu3vus9jmti7h4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "188683030091-3r5ru5pvndsp09esl9rgi1njfo2387p8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.events.onbeat",
+                "app_store_id": "1588556688"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
